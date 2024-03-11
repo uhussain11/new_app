@@ -4,7 +4,7 @@ import {useState} from 'react';
 const KeyFindingSlide = (props) => {
 
   const [hovered, setHovered] = useState(false);
-  const color = `h-[95vh] border border-[#000] ml-4 mr-4 mt-4 mb-4 rounded-sm`;
+  const color = `h-[12rem] border border-[#000] ml-4 mr-4 mt-4 mb-4 rounded-sm`;
   return (
     <div className={color} onMouseEnter={() => setHovered(true)}
     onMouseLeave={() => setHovered(false)}>

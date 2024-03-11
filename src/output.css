@@ -580,6 +580,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-full {
   height: 100%;
 }
@@ -618,6 +622,26 @@ video {
 
 .h-\[95vh\] {
   height: 95vh;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-\[2rem\] {
+  height: 2rem;
+}
+
+.h-\[25rem\] {
+  height: 25rem;
+}
+
+.h-\[15rem\] {
+  height: 15rem;
+}
+
+.h-\[12rem\] {
+  height: 12rem;
 }
 
 .w-full {

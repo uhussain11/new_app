@@ -13,7 +13,9 @@ const HomePage = () => {
     )
   }
   return ( 
-    <>{slides}</>
+    <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)'}}>
+      {slides}
+    </div>
   );
 };
 
