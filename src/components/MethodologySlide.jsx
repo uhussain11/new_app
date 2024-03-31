@@ -75,9 +75,7 @@ const downCircleStyle = {
   alignSelf: 'flex-end',
 };
 
-
-
-const MethodologyPage = () => {
+const MethodologySlide = () => {
   return (
     <div style={rootStyle}>
       <h1 style={titleStyle}>METHODOLOGY</h1>
@@ -88,18 +86,10 @@ const MethodologyPage = () => {
         Our social listening program, Quid, analyzes online conversations surrounding targeted keywords linked to a specific topic.
       </p>
       <ul style={listStyle}>
-        <li>
-          social conversations surrounding EVs
-        </li>
-        <li>
-          general user values
-        </li>
-        <li>
-          conversation direction
-        </li>
-        <li>
-          other key metrics to gain insight into Gen Z sentiment surrounding EVs
-        </li>
+        <li>social conversations surrounding EVs</li>
+        <li>general user values</li>
+        <li>conversation direction</li>
+        <li>other key metrics to gain insight into Gen Z sentiment surrounding EVs</li>
       </ul>
       <br/>
 
@@ -121,5 +111,4 @@ const MethodologyPage = () => {
   );
 };
 
-export default MethodologyPage;
-
+export default MethodologySlide;
