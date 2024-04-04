@@ -1,9 +1,13 @@
 import React from 'react';
+import KeyFindings from '../components/KeyFindings';
+import MethodologySlide from '../components/MethodologySlide';
 
 const HomePage = () => {
-  return (
+
+  return ( 
     <div>
-      <h1>Hello, World!</h1>
+      <KeyFindings/>
+      <MethodologySlide/>
     </div>
   );
 };
