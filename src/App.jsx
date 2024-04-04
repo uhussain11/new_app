@@ -1,15 +1,13 @@
 import './App.css'
-import HomePage from "./pages/HomePage"
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { useEffect } from 'react';
+import HomePage from "./pages/HomePage/HomePage"
+import LoadingScreen from './pages/LoadingScreen/LoadingScreen';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-      </Routes>
-    </Router>
+    <>
+      <LoadingScreen/>
+      <HomePage />
+    </>
   )
 }
 

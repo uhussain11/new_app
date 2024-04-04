@@ -1,0 +1,272 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .loading-screen  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+
+  .loading-screen.display-none  {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    transition: all 0.5s;
+    opacity: 0;
+
+    animation: disappear 0.5s;
+    animation: show-home 0.5s linear 0.5s;
+    animation-fill-mode: forwards; 
+  }
+
+  @keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+  }
+
+  @keyframes show-home {
+    0% {
+        height: 100vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
+  }
+  
+  .lines {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+
+  }
+  
+  .line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 66%;
+    background: var(--quintary);
+    overflow: hidden;
+  
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 15vw;
+      left: -50%;
+      top: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, var(--primary) 75%, var(--primary) 100%);
+      animation: move 7s 0s infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    }
+    
+    &:nth-child(1) {
+      top: 28%;
+      &::after {
+        animation-delay: 2s;
+      }
+    }
+    
+  }
+  
+  @keyframes move {
+    0% {
+      left: -50%;
+    }
+    100% {
+      left: 110%;
+    }
+  }
+  
+  .charging-battery {
+    width: 10%;
+    height: 40%;
+    border: 5px solid var(--primary);
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+    animation:  load 5s linear;
+    animation-fill-mode: forwards; 
+    transform: rotate(-90deg);
+    top: 27%;
+    background-color: var(--secondary);
+
+  }
+
+  .charging-battery::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 25%;
+    width: 40%;
+    height: 5px;
+    border: 5px solid var(--primary);
+    border-radius: 1px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: rotate(180deg);
+  }
+
+
+  @keyframes load{
+    0% {
+        box-shadow: 0 -20vw var(--background) inset;
+    }
+    100% {
+        box-shadow: 0 0 var(--background) inset;
+    }
+  }
+
+  .start-button {
+    background-color: var(--primary);
+    color: var(--background);
+    width: 10%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1em;
+    border-radius: 50%;
+    vertical-align: middle;
+    z-index: 1;
+    position: absolute;
+    bottom: 10%;
+    box-shadow: 0 0 15px 2px var(--primary);
+    cursor: pointer;
+  }
+
+  .start-button::before {
+    content:'';
+    float: left;
+    width: auto;
+    padding-bottom: 100%;
+  }
+
+  .start-text {
+    background-color: var(--primary);
+    border-radius: 50%;
+    text-align: center;
+  }
+
+
+  @media screen and (max-width:1000px) {
+
+    @keyframes load{
+      0% {
+          box-shadow: 0 -30vw var(--background) inset;
+      }
+      100% {
+          box-shadow: 0 0 var(--background) inset;
+      }
+    }
+
+    .charging-battery {
+      width: 15%;
+    }
+
+    .start-button {
+      width: 12%;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+
+    @keyframes load{
+      0% {
+          box-shadow: 0 -40vw var(--background) inset;
+      }
+      100% {
+          box-shadow: 0 0 var(--background) inset;
+      }
+    }
+
+    .charging-battery {
+      width: 16%;
+    }
+
+    .start-button {
+      width: 17%;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+
+    @keyframes load{
+      0% {
+          box-shadow: 0 -40vw var(--background) inset;
+      }
+      100% {
+          box-shadow: 0 0 var(--background) inset;
+      }
+    }
+
+    .charging-battery {
+      width: 20%;
+    }
+
+    .start-button {
+      width: 22%;
+    }
+  }
+
+  @media screen and (max-width:426px) {
+
+    @keyframes load{
+      0% {
+          box-shadow: 0 -60vw var(--background) inset;
+      }
+      100% {
+          box-shadow: 0 0 var(--background) inset;
+      }
+    }
+
+    .start-button {
+      width: 26%;
+    }
+  }
+
+  @media screen and (max-width:326px) {
+
+    @keyframes load{
+      0% {
+          box-shadow: 0 -80vw var(--background) inset;
+      }
+      100% {
+          box-shadow: 0 0 var(--background) inset;
+      }
+    }
+
+    .charging-battery {
+      width: 25%;
+    }
+
+    .start-button {
+      width: 30%;
+    }
+  }
