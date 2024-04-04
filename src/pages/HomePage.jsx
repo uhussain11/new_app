@@ -1,9 +1,11 @@
 import React from 'react';
+import KeyFindings from '../components/KeyFindings';
 
 const HomePage = () => {
-  return (
+
+  return ( 
     <div>
-      <h1>Hello, World!</h1>
+      <KeyFindings/>
     </div>
   );
 };
