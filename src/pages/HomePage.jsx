@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import KeyFindings from '../components/KeyFindings';
-import MethodologySlide from '../components/MethodologySlide';
+import Methodology from '../components/Methodology';
 
 const HomePage = () => {
 
@@ -9,7 +9,7 @@ const HomePage = () => {
     <div>
       <Header/>
       <KeyFindings/>
-      <MethodologySlide/>
+      <Methodology/>
     </div>
   );
 };
