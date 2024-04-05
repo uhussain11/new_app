@@ -34,9 +34,9 @@ const Header = () => {
         <h1 className="logo text-4xl"> <a className="" href="https://theagency.jou.ufl.edu/"> The Agency </a> </h1>
         </div>
         <div className="flex items-center">
-        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> HOW IT STARTED </Link></h3>
-        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> KEY FINDINGS </Link> </h3>
-        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> WHAT'S NEXT </Link> </h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden">  HOW IT STARTED </h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden"> KEY FINDINGS </h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden"> WHAT'S NEXT </h3>
         </div>
         </div>
         </>
