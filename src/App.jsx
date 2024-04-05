@@ -1,12 +1,22 @@
+import React, {useState} from 'react';
 import './App.css'
-import HomePage from "./pages/HomePage/HomePage"
+import HomePage from "./pages/HomePage"
 import LoadingScreen from './pages/LoadingScreen/LoadingScreen';
 
 function App() {
+  const [movePages, setMovePages] = useState(false);
+
+  function moveToHome(value) {
+    setMovePages(value);
+  }
+
   return (
     <>
-      <LoadingScreen/>
-      <HomePage />
+    {movePages ? (
+        <HomePage />
+      ) : (
+        <LoadingScreen moveToHome={moveToHome}/>
+      )}
     </>
   )
 }
