@@ -2,24 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: "Aldrich", sans-serif;
   font-weight: 400;
+  font-style: normal;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary: #FDF9FF;
+  --secondary: #7597C4;
+  --quintary: #1f2035;
+  --background: #06071F;
+
 }
 
 body {
-  background-color: #06071F;
+  background-color: var(--background);
 }
