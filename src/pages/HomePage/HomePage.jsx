@@ -1,10 +1,13 @@
 import React from 'react';
-import './HomePage.css'
+import KeyFindings from '../components/KeyFindings';
+import MethodologySlide from '../components/MethodologySlide';
 
 const HomePage = () => {
-  return (
-    <div className='home'>
-      <h1>hello world!</h1>
+
+  return ( 
+    <div>
+      <KeyFindings/>
+      <MethodologySlide/>
     </div>
   );
 };
