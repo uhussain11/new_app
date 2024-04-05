@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily:{
+      'aldrich': ['Aldrich','sans-serif'],
+    },
     extend: {},
   },
   plugins: [],

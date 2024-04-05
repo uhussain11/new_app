@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Perandory';
+    src: local('Perandory'), url('../assets/fonts/PERANDORY/Perandory-Regular.otf');
+}
+
+.logo {
+    font-family: 'Perandory';
+
+}
