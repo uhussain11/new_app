@@ -3,7 +3,7 @@ import './Logo.css'
 const Header = () => {
     return(
         <>
-        <div className="flex items-center justify-between text-white m-8">
+        <div className="flex items-center lg:justify-between justify-center text-white m-8">
         <div className="flex items-center justify-center">
         <svg width="241.834212px" height="42.0000451px" viewBox="0 0 241.834212 42.0000451" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Group 34</title>
@@ -31,12 +31,12 @@ const Header = () => {
     </g>
     </svg>
         <h1 className="font-aldrich ml-2 mr-2"> x </h1> 
-        <h1 className="logo text-3xl"> <a className="" href="https://theagency.jou.ufl.edu/"> The Agency </a> </h1>
+        <h1 className="logo text-4xl"> <a className="" href="https://theagency.jou.ufl.edu/"> The Agency </a> </h1>
         </div>
         <div className="flex items-center">
-        <h3 className="font-aldrich md:block md:m-6 hidden"> <Link to="/"> HOW IT STARTED </Link></h3>
-        <h3 className="font-aldrich md:block md:m-6 hidden"> <Link to="/"> KEY FINDINGS </Link> </h3>
-        <h3 className="font-aldrich md:block md:m-6 hidden"> <Link to="/"> WHAT'S NEXT </Link> </h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> HOW IT STARTED </Link></h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> KEY FINDINGS </Link> </h3>
+        <h3 className="font-aldrich lg:block lg:m-6 hidden"> <Link to="/"> WHAT'S NEXT </Link> </h3>
         </div>
         </div>
         </>
