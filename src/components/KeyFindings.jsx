@@ -18,19 +18,19 @@ const KeyFindings = () => {
     <div className="flex justify-center md:flex-row flex-col md:align-middle">
     <div className="flex flex-col md:justify-center md:w-1/3">
       <KeyFindingSlide number={"01"} title={"The Next Big Things: EV Purchase Patterns"}/>
-      <KeyFindingSlide number={"02"}/>
-      <KeyFindingSlide number={"03"}/>
+      <KeyFindingSlide number={"02"} title={"Making the Switch: Gen Z & EV Purchase Implications"}/>
+      <KeyFindingSlide number={"03"} title={"EV Infrastructure & Immersion Influences Audiences"}/>
     </div>
     <div className="flex flex-col md:justify-center md:w-1/3">
-    <KeyFindingSlide number={"04"}/>
-    <KeyFindingSlide number={"05"}/>
-    <KeyFindingSlide number={"06"}/>
-    <KeyFindingSlide number={"07"}/>
+    <KeyFindingSlide number={"04"} title={"Trusting the Technology"}/>
+    <KeyFindingSlide number={"05"} title={"Geography & Psychographics Matter"}/>
+    <KeyFindingSlide number={"06"} title={"Gen Z forges the Future"}/>
+    <KeyFindingSlide number={"07"} title={"Entertainment Platforms Reign Supreme"}/>
     </div>
     <div className="flex flex-col md:justify-center md:w-1/3 ">
-    <KeyFindingSlide number={"08"}/>
-    <KeyFindingSlide number={"09"}/>
-    <KeyFindingSlide number={"10"}/>
+    <KeyFindingSlide number={"08"} title={"The Voices Driving EVs"}/>
+    <KeyFindingSlide number={"09"} title={"Why Gen Z?"}/>
+    <KeyFindingSlide number={"10"} title={"Branding Meets EV Media"}/>
     </div>
     </div>
     </>
