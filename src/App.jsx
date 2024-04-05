@@ -1,15 +1,23 @@
+import React, {useState} from 'react';
 import './App.css'
 import HomePage from "./pages/HomePage"
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import { useEffect } from 'react';
+import LoadingScreen from './pages/LoadingScreen/LoadingScreen';
 
 function App() {
+  const [movePages, setMovePages] = useState(false);
+
+  function moveToHome(value) {
+    setMovePages(value);
+  }
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-      </Routes>
-    </Router>
+    <>
+    {movePages ? (
+        <HomePage />
+      ) : (
+        <LoadingScreen moveToHome={moveToHome}/>
+      )}
+    </>
   )
 }
 
